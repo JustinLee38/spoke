@@ -76,7 +76,7 @@
         let airports;
 
         map.once("idle", () => {
-          d3.json("/data/evStation.json", function (d) {
+          d3.json("./data/evStation.json", function (d) {
             airports = d;
             getSpoke(airports);
           });
